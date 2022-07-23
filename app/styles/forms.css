@@ -28,3 +28,12 @@ input[type=button] {
 	align-self: flex-end;
 	margin: 0;
 }
+
+button {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	border-radius: 0;
+	padding: 1rem 2rem;
+	margin: 0.5rem 1rem;
+}

@@ -1,4 +1,10 @@
+import { Header } from './Header';
+import { View } from 'curvature/base/View';
+
 document.addEventListener('DOMContentLoaded', function() {
-  // do your setup here
-  console.log('Initialized app');
+  const header = new Header;
+  const home   = View.from(require('./home.html'));
+
+  header.render(document.body);
+  home.render(document.body);
 });

@@ -1,6 +1,7 @@
 html {
-	--size: 7vw;
+	--size: 5vw;
 }
+
 div.branding {
 	--hSpace: 19%;
 	display: inline-block;
@@ -10,6 +11,7 @@ div.branding {
 	margin-left: calc(0.5 * var(--hSpace));
 	margin-right: calc(0.5 * var(--hSpace));
 	margin-bottom: 2.5rem;
+	transition: font-size 0.5s ease-in;
 }
 
 div.branding::after {
@@ -37,25 +39,43 @@ h3,h4 {
 }
 
 div.branding h1 {
-	font-size: var(--size);	
+	font-size: min(max(var(--size), 1.5rem), 6rem);
 }
 
 div.branding h2 {
-	font-size: calc(var(--size) * 0.375);
+	font-size: min(max(calc(var(--size) * 0.375), 1.1rem), 4rem);
 }
 
 h3 {
-	font-size: max(calc(var(--size) * 0.75), 1.75rem);
+	font-size: min(max(calc(var(--size) * 0.75), 1.75rem), 4rem);
 }
 
 h4 {
-	font-size: max(calc(var(--size) * 0.65), 1.5rem);
+	font-size: min(max(calc(var(--size) * 0.65), 1.5rem), 3rem);
 }
 
 .no-break {
 	white-space: nowrap;
 }
 
-header {
-	text-align: center;
+/*header[data-scrolled=true] div.branding {
+	min-width: 8rem;
+	--size: 4vw;
 }
+
+header[data-scrolled=true] div.branding hr {
+	display: none;
+}*/
+
+span.rest {
+	display: inline-block;
+	transform-origin: left;
+}
+
+/*header[data-scrolled=true] span.rest {
+	width: 0;
+	transform: scaleX(0);
+	overflow: hidden;
+}
+
+*/
