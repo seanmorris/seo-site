@@ -1,12 +1,21 @@
 html {
 	min-height: 100%;
 	font-family: robotoregular;
+
 }
 
 html,
 body {
 	display: flex;
 	flex-direction: column;
+}
+
+html.menu-open {
+	margin-right: calc(1px * var(--gutter));
+}
+
+html.menu-open body {
+	overflow: clip;
 }
 
 body {
@@ -29,10 +38,12 @@ body {
 }
 
 @media(max-width: 750px) {
-	.row {
+	main .row {
+		display: flex;
 		flex-direction: column;
 	}
-	.row.reverse {
+
+	main .row.reverse {
 		flex-direction: column;
 	}
 }
@@ -43,6 +54,9 @@ header {
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 	position: sticky;
 	top: 0;
+	left: 0;
+	right: 0;
+	left: 100%;
 }
 
 header nav {

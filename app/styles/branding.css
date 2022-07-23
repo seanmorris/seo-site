@@ -5,13 +5,13 @@ html {
 div.branding {
 	--timeA: 0.25s;
 	--timeB: 0.5s;
-	--hSpace: 19%;
+	--hSpace: 24%;
 	display: inline-block;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
 	text-align: center;
-	margin-top: 1rem;
+	padding-top: 1rem;
 	margin-bottom: 1.5rem;
 	background-color: #000000;
 	z-index: 2;
@@ -45,12 +45,12 @@ h3,h4 {
 }
 
 div.branding h1 {
-	font-size: min(max(var(--size), 1.5rem), 6rem);
+	font-size: min(max(var(--size), 1.25rem), 6rem);
 	transition: font-size var(--timeA) 0.1s ease-in;
 }
 
 div.branding h2 {
-	font-size: min(max(calc(var(--size) * 0.5), 1.1rem), 5rem);
+	font-size: min(max(calc(var(--size) * 0.5), 0.85rem), 5rem);
 	transition: font-size var(--timeA) 0.1s ease-in;
 }
 
@@ -68,13 +68,13 @@ h4 {
 
 header[data-scrolled=true] div.branding {
 	min-width: 8rem;
-	left: 0;
-	transform: translateX(30px);
-	--size: 1.5vw;
+	/*left: 0;*/
+	/*transform: translateX(30px);*/
+	--size: 1vw;
 }
 
-header[data-scrolled=true] div.branding hr {
-	transform: scaleY(0.25);
+header div.branding hr {
+	opacity: 0.25;
 }
 
 span.rest {
