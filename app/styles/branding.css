@@ -3,15 +3,21 @@ html {
 }
 
 div.branding {
+	--timeA: 0.25s;
+	--timeB: 0.5s;
 	--hSpace: 19%;
 	display: inline-block;
 	position: relative;
+	left: 50%;
+	transform: translate(-50%);
 	text-align: center;
 	margin-top: 1rem;
-	margin-left: calc(0.5 * var(--hSpace));
-	margin-right: calc(0.5 * var(--hSpace));
 	margin-bottom: 1.5rem;
-	transition: font-size 0.5s ease-in;
+	background-color: #000000;
+	z-index: 2;
+	transition:
+		transform var(--timeB) var(--timeA) ease-in-out,
+		left var(--timeB) var(--timeA) ease-in-out;
 }
 
 div.branding::after {
@@ -40,10 +46,12 @@ h3,h4 {
 
 div.branding h1 {
 	font-size: min(max(var(--size), 1.5rem), 6rem);
+	transition: font-size var(--timeA) 0.1s ease-in;
 }
 
 div.branding h2 {
-	font-size: min(max(calc(var(--size) * 0.375), 1.1rem), 4rem);
+	font-size: min(max(calc(var(--size) * 0.5), 1.1rem), 5rem);
+	transition: font-size var(--timeA) 0.1s ease-in;
 }
 
 h3 {
@@ -58,14 +66,16 @@ h4 {
 	white-space: nowrap;
 }
 
-/*header[data-scrolled=true] div.branding {
+header[data-scrolled=true] div.branding {
 	min-width: 8rem;
-	--size: 4vw;
+	left: 0;
+	transform: translateX(30px);
+	--size: 1.5vw;
 }
 
 header[data-scrolled=true] div.branding hr {
-	display: none;
-}*/
+	transform: scaleY(0.25);
+}
 
 span.rest {
 	display: inline-block;
