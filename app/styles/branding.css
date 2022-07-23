@@ -45,11 +45,11 @@ div.branding h2 {
 }
 
 h3 {
-	font-size: calc(var(--size) * 0.75);
+	font-size: max(calc(var(--size) * 0.75), 1.75rem);
 }
 
 h4 {
-	font-size: calc(var(--size) * 0.65);
+	font-size: max(calc(var(--size) * 0.65), 1.5rem);
 }
 
 .no-break {

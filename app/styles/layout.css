@@ -118,15 +118,19 @@ section.logos {
 section.logos img {
 	width: 14%;
 	max-height: 5rem;
+	min-width: 6.5rem;
 	object-fit: contain;
 	margin: 2%;
 }
 
 section.logos-small img {
 	width: 10%;
+	min-width: 3.5rem;
 	vertical-align: middle;
 }
 
 section.logos p {
 	font-size: 1.25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
