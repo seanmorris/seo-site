@@ -1,0 +1,59 @@
+div.branding {
+	--hSpace: 19%;
+	--size: 7vw;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin-top: 1rem;
+	margin-left: calc(0.5 * var(--hSpace));
+	margin-right: calc(0.5 * var(--hSpace));
+	margin-bottom: 2.5rem;
+}
+
+div.branding::after {
+	position: absolute;
+	top: 12.5%;
+	left: calc(-1 * var(--hSpace));
+	right: calc(-1 * var(--hSpace));
+	bottom: -15%;
+	content: '';
+	background-image: url('/images/olive-branch-left.svg'), url('/images/olive-branch-right.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, top right;
+	filter: invert(50%);
+}
+
+div.branding h1,
+div.branding h2 {
+	font-family: cinzelregular;
+	font-weight: normal;
+	margin: 0;
+}
+
+h3,h4 {
+	font-family: robotomedium;
+}
+
+div.branding h1 {
+	font-size: var(--size);	
+}
+
+div.branding h2 {
+	font-size: calc(var(--size) * 0.375);
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+h4 {
+	font-size: 3.25rem;
+}
+
+.no-break {
+	white-space: nowrap;
+}
+
+header {
+	text-align: center;
+}

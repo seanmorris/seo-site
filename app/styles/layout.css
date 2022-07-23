@@ -1,0 +1,117 @@
+html {
+	min-height: 100%;
+	font-family: robotoregular;
+}
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	margin: 0;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+body, main {
+	flex: 1;
+}
+
+body > main {
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+section.call-out,
+section.code-image,
+section.contact-form,
+section.kellett-screen,
+section.john-rogers-screen {
+	padding: 2rem;
+}
+
+section.call-out {
+	background-color: rgba(255,255,255,0.06125);
+}
+
+section.contact-form {
+	background-color: rgba(255,255,255,0.125);
+}
+
+section.call-out h3 {
+	padding: 1rem;	
+}
+
+section.contact-form h4 {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+
+section.kellett-screen,
+section.john-rogers-screen {
+	min-height: 30rem;
+}
+
+section.john-rogers-screen {
+	background-image: url('/images/john-rogers-screenshot.png');
+}
+
+section.kellett-screen {
+	background-image: url('/images/kellett-screenshot.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section.code-image {
+	background-image: url('/images/pexels-kevin-ku-577585.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 444px;
+}
+
+h3 {
+	color: rgba(255,255,255, 0.75);
+	word-break: keep-all;
+	line-height: 1em;
+	text-align: right;
+	margin: 0;
+}
+
+section.logos {
+	margin-top: 2.5rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+section.logos img {
+	width: 14%;
+	max-height: 5rem;
+	object-fit: contain;
+	margin: 2%;
+}
+
+section.logos-small img {
+	width: 10%;	
+}
+
+section.logos p {
+	font-size: 1.25rem;
+}

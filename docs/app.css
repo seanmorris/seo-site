@@ -1,0 +1,563 @@
+.brunch {
+  font-family: -apple-system, Sans-Serif;
+  text-align: center;
+  font-size: 24pt;
+  color: #3f894a;
+}
+
+div.branding {
+	--hSpace: 19%;
+	--size: 7vw;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin-top: 1rem;
+	margin-left: calc(0.5 * var(--hSpace));
+	margin-right: calc(0.5 * var(--hSpace));
+	margin-bottom: 2.5rem;
+}
+
+div.branding::after {
+	position: absolute;
+	top: 12.5%;
+	left: calc(-1 * var(--hSpace));
+	right: calc(-1 * var(--hSpace));
+	bottom: -15%;
+	content: '';
+	background-image: url('/images/olive-branch-left.svg'), url('/images/olive-branch-right.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, top right;
+	filter: invert(50%);
+}
+
+div.branding h1,
+div.branding h2 {
+	font-family: cinzelregular;
+	font-weight: normal;
+	margin: 0;
+}
+
+h3,h4 {
+	font-family: robotomedium;
+}
+
+div.branding h1 {
+	font-size: var(--size);	
+}
+
+div.branding h2 {
+	font-size: calc(var(--size) * 0.375);
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+h4 {
+	font-size: 3.25rem;
+}
+
+.no-break {
+	white-space: nowrap;
+}
+
+header {
+	text-align: center;
+}
+/*
+# Font Squirrel Font-face Generator Configuration File
+# Upload this file to the generator to recreate the settings
+# you used to create these fonts.
+
+{"mode":"expert","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"basic","subset_custom":"","subset_custom_range":"","subset_ot_features_list":"","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
+*/
+
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('/fonts/cinzel-regular-webfont.woff2') format('woff2'),
+         url('/fonts/cinzel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cinzel_decorativeregular';
+    src: url('/fonts/cinzeldecorative-regular-webfont.woff2') format('woff2'),
+         url('/fonts/cinzeldecorative-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('/fonts/cinzeldecorative-bold-webfont.woff2') format('woff2'),
+         url('/fonts/cinzeldecorative-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cinzel_decorativeblack';
+    src: url('/fonts/cinzeldecorative-black-webfont.woff2') format('woff2'),
+         url('/fonts/cinzeldecorative-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cinzelbold';
+    src: url('/fonts/cinzel-bold-webfont.woff2') format('woff2'),
+         url('/fonts/cinzel-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cinzelblack';
+    src: url('/fonts/cinzel-black-webfont.woff2') format('woff2'),
+         url('/fonts/cinzel-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /**
+# Font Squirrel Font-face Generator Configuration File
+# Upload this file to the generator to recreate the settings
+# you used to create these fonts.
+
+{"mode":"optimal","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"basic","subset_custom":"","subset_custom_range":"","subset_ot_features_list":"","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
+**/
+
+@font-face {
+    font-family: 'coolveticacompressed_heavy';
+    src: url('/fonts/coolvetica_compressed_hv-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_compressed_hv-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticacondensed_regular';
+    src: url('/fonts/coolvetica_condensed_rg-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_condensed_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticacrammed_regular';
+    src: url('/fonts/coolvetica_crammed_rg-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_crammed_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('/fonts/coolvetica_rg-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticaregular_italic';
+    src: url('/fonts/coolvetica_rg_it-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_rg_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('/fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_condensed';
+    src: url('/fonts/roboto-boldcondensed-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-boldcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_condensed_italic';
+    src: url('/fonts/roboto-boldcondenseditalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-boldcondenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('/fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotocondensed';
+    src: url('/fonts/roboto-condensed-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-condensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotocondensed_italic';
+    src: url('/fonts/roboto-condenseditalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-condenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('/fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('/fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('/fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+	background-color: #111111;
+	color: #FFFFFF;
+}
+form {
+	flex: 1;
+}
+
+form,
+form > label {
+	display: flex;
+	flex-direction: column;
+}
+
+form > label {
+	margin-bottom: 0.75rem;
+}
+
+input, select {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,0.5);
+	padding: 0.5rem;
+	color: rgba(255, 255, 255, 0.75);
+	box-sizing: border-box;
+}
+
+input[type=button] {
+	background-color: rgba(255, 255, 255, 0.75);;
+	color: rgba(0, 0, 0, 0.75);
+	max-width: 50%;
+	align-self: flex-end;
+	margin: 0;
+}
+html {
+	min-height: 100%;
+	font-family: robotoregular;
+}
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	margin: 0;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+body, main {
+	flex: 1;
+}
+
+body > main {
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+section.call-out,
+section.code-image,
+section.contact-form,
+section.kellett-screen,
+section.john-rogers-screen {
+	padding: 2rem;
+}
+
+section.call-out {
+	background-color: rgba(255,255,255,0.06125);
+}
+
+section.contact-form {
+	background-color: rgba(255,255,255,0.125);
+}
+
+section.call-out h3 {
+	padding: 1rem;	
+}
+
+section.contact-form h4 {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+
+section.kellett-screen,
+section.john-rogers-screen {
+	min-height: 30rem;
+}
+
+section.john-rogers-screen {
+	background-image: url('/images/john-rogers-screenshot.png');
+}
+
+section.kellett-screen {
+	background-image: url('/images/kellett-screenshot.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section.code-image {
+	background-image: url('/images/pexels-kevin-ku-577585.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 444px;
+}
+
+h3 {
+	color: rgba(255,255,255, 0.75);
+	word-break: keep-all;
+	line-height: 1em;
+	text-align: right;
+	margin: 0;
+}
+
+section.logos {
+	margin-top: 2.5rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+section.logos img {
+	width: 14%;
+	max-height: 5rem;
+	object-fit: contain;
+	margin: 2%;
+}
+
+section.logos-small img {
+	width: 10%;	
+}
+
+section.logos p {
+	font-size: 1.25rem;
+}
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on July 23, 2022 */
+
+
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('roboto-italic-webfont.woff2') format('woff2'),
+         url('roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('roboto-thin-webfont.woff2') format('woff2'),
+         url('roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+
+}
+
+/*# sourceMappingURL=app.css.map*/
