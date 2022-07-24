@@ -1,0 +1,23 @@
+section.actual-contact-form {
+	position: relative;
+	transition: top 0.5s ease-in, background-color 0.5s ease-out, color 0.5s ease-out;
+	top: 0;
+	top: calc(1px * var(--offset));
+}
+
+section.actual-contact-form[data-contact-offset]:not([data-contact-offset="0"]) {
+	border: 1px solid #000000;
+	background-color: #444444;
+	transition: top 0.5s ease-out;
+}
+
+section.actual-contact-form[data-contact-offset]:not([data-contact-offset="0"]) input[type=text], 
+section.actual-contact-form[data-contact-offset]:not([data-contact-offset="0"]) select {
+	background-color: #333333;
+}
+
+section.actual-contact-form[data-invoke="invoked"],
+section.actual-contact-form[data-invoke="invoking"] {
+	position: sticky;
+	top: 0;
+}

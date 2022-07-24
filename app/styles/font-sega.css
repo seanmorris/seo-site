@@ -1,0 +1,6 @@
+@font-face {
+	font-family: "Sega";
+	src: url("fonts/SEGA.woff2") format('woff2')
+		,url("fonts/SEGA.woff") format('woff')
+		,url("fonts/SEGA.TTF") format('ttf');
+}

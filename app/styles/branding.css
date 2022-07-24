@@ -14,7 +14,7 @@ div.branding {
 	padding-top: 1rem;
 	margin-bottom: 1.5rem;
 	background-color: #000000;
-	z-index: 2;
+	z-index: 2000;
 	transition:
 		transform var(--timeB) var(--timeA) ease-in-out,
 		left var(--timeB) var(--timeA) ease-in-out;

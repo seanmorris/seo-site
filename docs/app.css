@@ -1,1 +1,914 @@
-.burger-button{width:1.85em;height:1.85em;padding:1rem;margin-left:auto;display:flex;flex-shrink:0;flex-direction:column;justify-content:space-between;display:flex!important;transform:scaleX(-1);z-index:1}.burger-button .stripe{transition:transform .25s 0ms ease-in,opacity .25s .15s ease-in,width .25s 50ms ease-in;background-color:#fff;width:100%;height:20%}.burger-button .stripe:nth-child(2){transform-origin:50% 50%}[data-menu-open=true] .burger-button .stripe:nth-child(2){transform-origin:50% 50%;transform:translateX(-3px) rotate(225deg);width:114%;opacity:0}.burger-button .stripe:first-child{transform-origin:0 50%}[data-menu-open=true] .burger-button .stripe:first-child{transform:rotate(45deg);width:114%}.burger-button .stripe:last-child{transform-origin:0 50%}[data-menu-open=true] .burger-button .stripe:last-child{transform:rotate(-45deg);width:114%}[data-menu-open=false] nav{transform:translateY(-100%);opacity:0}html{--size:5vw}div.branding{--timeA:0.25s;--timeB:0.5s;--hSpace:24%;display:inline-block;position:relative;left:50%;transform:translate(-50%);text-align:center;padding-top:1rem;margin-bottom:1.5rem;background-color:#000;z-index:2;transition:transform var(--timeB) var(--timeA) ease-in-out,left var(--timeB) var(--timeA) ease-in-out}div.branding::after{position:absolute;top:12.5%;left:calc(-1 * var(--hSpace));right:calc(-1 * var(--hSpace));bottom:-15%;content:'';background-image:url(/images/olive-branch-left.svg),url(/images/olive-branch-right.svg);background-repeat:no-repeat,no-repeat;background-position:top left,top right;filter:invert(50%)}div.branding h1,div.branding h2{font-family:cinzelregular;font-weight:400;margin:0}h3,h4{font-family:robotomedium}div.branding h1{font-size:min(max(var(--size),1.25rem),6rem);transition:font-size var(--timeA) .1s ease-in}div.branding h2{font-size:min(max(calc(var(--size) * .5),.85rem),5rem);transition:font-size var(--timeA) .1s ease-in}h3{font-size:min(max(calc(var(--size) * .75),1.75rem),4rem)}h4{font-size:min(max(calc(var(--size) * .65),1.5rem),3rem)}.no-break{white-space:nowrap}header[data-scrolled=true] div.branding{min-width:8rem;--size:1vw}header div.branding hr{opacity:.25}span.rest{display:inline-block;transform-origin:left}@font-face{font-family:cinzelregular;src:url(/fonts/cinzel-regular-webfont.woff2) format('woff2'),url(/fonts/cinzel-regular-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:cinzel_decorativeregular;src:url(/fonts/cinzeldecorative-regular-webfont.woff2) format('woff2'),url(/fonts/cinzeldecorative-regular-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:cinzel_decorativebold;src:url(/fonts/cinzeldecorative-bold-webfont.woff2) format('woff2'),url(/fonts/cinzeldecorative-bold-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:cinzel_decorativeblack;src:url(/fonts/cinzeldecorative-black-webfont.woff2) format('woff2'),url(/fonts/cinzeldecorative-black-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:cinzelbold;src:url(/fonts/cinzel-bold-webfont.woff2) format('woff2'),url(/fonts/cinzel-bold-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:cinzelblack;src:url(/fonts/cinzel-black-webfont.woff2) format('woff2'),url(/fonts/cinzel-black-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:coolveticacompressed_heavy;src:url(/fonts/coolvetica_compressed_hv-webfont.woff2) format('woff2'),url(/fonts/coolvetica_compressed_hv-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:coolveticacondensed_regular;src:url(/fonts/coolvetica_condensed_rg-webfont.woff2) format('woff2'),url(/fonts/coolvetica_condensed_rg-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:coolveticacrammed_regular;src:url(/fonts/coolvetica_crammed_rg-webfont.woff2) format('woff2'),url(/fonts/coolvetica_crammed_rg-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:coolveticaregular;src:url(/fonts/coolvetica_rg-webfont.woff2) format('woff2'),url(/fonts/coolvetica_rg-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:coolveticaregular_italic;src:url(/fonts/coolvetica_rg_it-webfont.woff2) format('woff2'),url(/fonts/coolvetica_rg_it-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotoblack;src:url(/fonts/roboto-black-webfont.woff2) format('woff2'),url(/fonts/roboto-black-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotoblack_italic;src:url(/fonts/roboto-blackitalic-webfont.woff2) format('woff2'),url(/fonts/roboto-blackitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotobold;src:url(/fonts/roboto-bold-webfont.woff2) format('woff2'),url(/fonts/roboto-bold-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotobold_condensed;src:url(/fonts/roboto-boldcondensed-webfont.woff2) format('woff2'),url(/fonts/roboto-boldcondensed-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotobold_condensed_italic;src:url(/fonts/roboto-boldcondenseditalic-webfont.woff2) format('woff2'),url(/fonts/roboto-boldcondenseditalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotobold_italic;src:url(/fonts/roboto-bolditalic-webfont.woff2) format('woff2'),url(/fonts/roboto-bolditalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotocondensed;src:url(/fonts/roboto-condensed-webfont.woff2) format('woff2'),url(/fonts/roboto-condensed-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotocondensed_italic;src:url(/fonts/roboto-condenseditalic-webfont.woff2) format('woff2'),url(/fonts/roboto-condenseditalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotoitalic;src:url(/fonts/roboto-italic-webfont.woff2) format('woff2'),url(/fonts/roboto-italic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotolight;src:url(/fonts/roboto-light-webfont.woff2) format('woff2'),url(/fonts/roboto-light-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotolight_italic;src:url(/fonts/roboto-lightitalic-webfont.woff2) format('woff2'),url(/fonts/roboto-lightitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotomedium;src:url(/fonts/roboto-medium-webfont.woff2) format('woff2'),url(/fonts/roboto-medium-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotomedium_italic;src:url(/fonts/roboto-mediumitalic-webfont.woff2) format('woff2'),url(/fonts/roboto-mediumitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotoregular;src:url(/fonts/roboto-regular-webfont.woff2) format('woff2'),url(/fonts/roboto-regular-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotothin;src:url(/fonts/roboto-thin-webfont.woff2) format('woff2'),url(/fonts/roboto-thin-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotothin_italic;src:url(/fonts/roboto-thinitalic-webfont.woff2) format('woff2'),url(/fonts/roboto-thinitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}footer{background-color:#111;color:#fff}form{flex:1}form,form>label{display:flex;flex-direction:column}form>label{margin-bottom:.75rem}input,select{width:100%;background-color:transparent;border:1px solid rgba(255,255,255,.5);padding:.5rem;color:rgba(255,255,255,.75);box-sizing:border-box}input[type=button]{background-color:rgba(255,255,255,.75);color:rgba(0,0,0,.75);max-width:50%;align-self:flex-end;margin:0}button{background-color:transparent;color:#fff;border:1px solid #fff;border-radius:0;padding:1rem 2rem;margin:.5rem 1rem}html{min-height:100%;font-family:robotoregular}body,html{display:flex;flex-direction:column}html.menu-open{margin-right:calc(1px * var(--gutter))}html.menu-open body{overflow:clip}body{background-color:#000;color:#fff;margin:0;max-width:1000px;width:100%;margin-left:auto;margin-right:auto}.row{display:flex;flex-direction:row}.row.reverse{flex-direction:row-reverse}@media(max-width:750px){main .row{display:flex;flex-direction:column}main .row.reverse{flex-direction:column}}header{align-items:flex-end;background-color:#000;box-shadow:0 1rem 1rem rgba(0,0,0,.25);position:sticky;top:0;left:0;right:0;left:100%}header nav{position:absolute;background-color:#060606;width:100%;display:flex;flex-direction:column;align-items:center;box-shadow:0 1rem 1rem rgba(0,0,0,.25);transition:opacity .25s ease-out,transform .25s ease-out;padding-top:1rem;padding-bottom:1rem}header nav a{color:#fff;text-decoration:none;padding:1rem;box-sizing:border-box}header nav a:not(:first-child){border-top:1px solid #fff}body,main{flex:1}body>main{display:flex;flex-direction:column}section{flex:1;display:flex;flex-direction:column}section.call-out,section.code-image,section.contact-form,section.john-rogers-screen,section.kellett-screen{padding:2rem}section.call-out{background-color:rgba(255,255,255,.06125)}section.contact-form{background-color:rgba(255,255,255,.125)}section h3{padding:1rem;margin:auto}section.contact-form h4{text-align:right;padding:0;margin:0}section.john-rogers-screen,section.kellett-screen{min-height:30rem}section.john-rogers-screen{background-image:url(/images/john-rogers-screenshot.png)}section.kellett-screen{background-image:url(/images/kellett-screenshot.png);background-repeat:no-repeat;background-size:cover}section.code-image{background-image:url(/images/pexels-kevin-ku-577585.jpg);background-repeat:no-repeat;background-size:cover;background-position:center bottom;min-height:444px}h3{color:rgba(255,255,255,.75);word-break:keep-all;line-height:1em;text-align:right;margin:0}section.logos{margin-top:1.5rem;text-align:center;margin-bottom:1rem}section.logos img{width:14%;max-height:5rem;min-width:6.5rem;object-fit:contain;margin:2%}section.logos-small img{width:10%;min-width:3.5rem;vertical-align:middle}section.logos p{font-size:1.25rem;padding-left:1rem;padding-right:1rem}/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on July 23, 2022 */@font-face{font-family:robotoitalic;src:url(roboto-italic-webfont.woff2) format('woff2'),url(roboto-italic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotolight;src:url(roboto-light-webfont.woff2) format('woff2'),url(roboto-light-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotolight_italic;src:url(roboto-lightitalic-webfont.woff2) format('woff2'),url(roboto-lightitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotomedium;src:url(roboto-medium-webfont.woff2) format('woff2'),url(roboto-medium-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotomedium_italic;src:url(roboto-mediumitalic-webfont.woff2) format('woff2'),url(roboto-mediumitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotoregular;src:url(roboto-regular-webfont.woff2) format('woff2'),url(roboto-regular-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotothin;src:url(roboto-thin-webfont.woff2) format('woff2'),url(roboto-thin-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:robotothin_italic;src:url(roboto-thinitalic-webfont.woff2) format('woff2'),url(roboto-thinitalic-webfont.woff) format('woff');font-weight:400;font-style:normal}
+.burger-button {
+	width: 1.85em;
+	height: 1.85em;
+	padding: 1rem;
+	margin-left: auto;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	justify-content: space-between;
+	display: flex !important;
+	transform: scaleX(-1.0);
+	z-index: 1;
+}
+
+.burger-button .stripe {
+	transition: transform 0.25s 0.05s ease-in
+		, opacity 0.15s 0.15s ease-in
+		, width 0.25s 0.05s ease-in;
+	background-color: white;
+	width: 100%;
+	height: 20%;
+}
+
+.burger-button .stripe:nth-child(2) {
+	transform-origin: 50% 50%;
+}
+
+[data-menu-open="true"] .burger-button .stripe:nth-child(2) {
+	transform-origin: 50% 50%;
+	transform: translateX(-3px) rotate(225deg);
+	width:  114%;
+	opacity: 0;
+}
+
+.burger-button .stripe:first-child {
+	transform-origin: -0% 50%;
+}
+
+[data-menu-open="true"] .burger-button .stripe:first-child {
+	transform: rotate(45deg);
+	width:  114%;
+}
+
+.burger-button .stripe:last-child {
+	transform-origin: -0% 50%;
+}
+
+[data-menu-open="true"] .burger-button .stripe:last-child {
+	transform: rotate(-45deg);
+	width:  114%;
+}
+
+[data-menu-open="false"] nav {
+	transform: translateY(-100%);
+	opacity: 0;
+	pointer-events: none;
+}
+
+[data-menu-open="true"] nav {
+	transform: translateY(1px);	
+}
+section.actual-contact-form {
+	position: relative;
+	transition: top 0.5s ease-in, background-color 0.5s ease-out, color 0.5s ease-out;
+	top: 0;
+	top: calc(1px * var(--offset));
+}
+
+section.actual-contact-form[data-contact-offset]:not([data-contact-offset="0"]) {
+	border: 1px solid #000000;
+	background-color: #444444;
+	transition: top 0.5s ease-out;
+}
+
+section.actual-contact-form[data-contact-offset]:not([data-contact-offset="0"]) input[type=text], 
+section.actual-contact-form[data-contact-offset]:not([data-contact-offset="0"]) select {
+	background-color: #333333;
+}
+
+section.actual-contact-form[data-invoke="invoked"],
+section.actual-contact-form[data-invoke="invoking"] {
+	position: sticky;
+	top: 0;
+}
+div.splash {
+	font-family: Sega, Arial;
+	position: fixed;
+	top:    0px;
+	left:   0px;
+	width:  100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	align-content: center;
+	justify-content: center;
+	font-size: 140px;
+	color:#11559c;
+	z-index: 500000;
+}
+
+div.splash div.center {
+	box-sizing: content-box;
+	padding: 20px;
+	position: relative;
+	overflow: visible;
+	padding: 0px;
+}
+
+div.splash div.center div.sm {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 10px;
+	font-family: monospace;
+	opacity: 0;
+}
+
+div.splash div.center:first-child {
+	-webkit-text-stroke: 20px white;
+}
+
+div.splash div.center:first-child div.sm {
+	-webkit-text-stroke: 4px white;
+}
+
+div.splash div.center:first-child div.min {
+	-webkit-text-stroke: 10px white !important;
+}
+
+div.splash div.center:first-child {
+	text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+div.splash div.center span.min {
+	opacity: 0;
+}
+
+div.splash div.center:last-child {
+	opacity: 0.5;
+}
+
+div.splash div.center {
+	text-align: center;
+	padding:10px;
+	position: absolute;
+	clip-path: polygon(
+		0 0
+		, 100% 0
+		, 100% 100%
+		, 0 100%
+	);
+}
+
+div.splash.hide div.center {
+	clip-path: polygon(
+		-25% 0%
+		, -10% 0%
+		, -10% 100%
+		, -25% 100%
+	);
+}
+
+div.splash.slide div.center {
+	clip-path: polygon(
+		110% 0%
+		, 125% 0%
+		, 125% 100%
+		, 110% 100%
+	);
+	opacity: 0.25;
+	transition: clip-path 0.5s;
+}
+
+div.splash.show {
+	background-color: #BBB;
+	color:#11559c;
+	transition: background-color 0.5s;
+}
+
+div.splash.show div.center:last-child,
+div.splash.done div.center:last-child {
+	opacity: 1;
+	transition: opacity 0.25s;
+}
+
+div.splash.show div.center span.min,
+div.splash.done div.center span.min {
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+
+div.splash.show div.center div.sm,
+div.splash.done div.center div.sm {
+	opacity: 1;
+	transition: opacity 0.25s;
+}
+
+div.splash.done {
+	background-color: black;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.75s ease-in,  background-color 0.75s ease-in;
+}
+
+span.min {
+	font-size: 35px;
+	margin-top:10px;
+	display: block;
+}
+
+.modal-dialog iframe {
+	width: 100%;
+	min-height: 600px;
+	margin-top: 2em;
+}
+
+iframe {
+	flex: 1;
+	border: 0px transparent;
+	max-width: 100%;
+	margin: 15px;
+}
+
+.modal .circle-progress {
+	border: black;
+}
+
+html {
+	--size: 5vw;
+}
+
+div.branding {
+	--timeA: 0.25s;
+	--timeB: 0.5s;
+	--hSpace: 24%;
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	padding-top: 1rem;
+	margin-bottom: 1.5rem;
+	background-color: #000000;
+	z-index: 2000;
+	transition:
+		transform var(--timeB) var(--timeA) ease-in-out,
+		left var(--timeB) var(--timeA) ease-in-out;
+}
+
+div.branding::after {
+	position: absolute;
+	top: 12.5%;
+	left: calc(-1 * var(--hSpace));
+	right: calc(-1 * var(--hSpace));
+	bottom: -15%;
+	content: '';
+	background-image: url('/images/olive-branch-left.svg'), url('/images/olive-branch-right.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, top right;
+	filter: invert(50%);
+}
+
+div.branding h1,
+div.branding h2 {
+	font-family: cinzelregular;
+	font-weight: normal;
+	margin: 0;
+}
+
+h3,h4 {
+	font-family: robotomedium;
+}
+
+div.branding h1 {
+	font-size: min(max(var(--size), 1.25rem), 6rem);
+	transition: font-size var(--timeA) 0.1s ease-in;
+}
+
+div.branding h2 {
+	font-size: min(max(calc(var(--size) * 0.5), 0.85rem), 5rem);
+	transition: font-size var(--timeA) 0.1s ease-in;
+}
+
+h3 {
+	font-size: min(max(calc(var(--size) * 0.75), 1.75rem), 4rem);
+}
+
+h4 {
+	font-size: min(max(calc(var(--size) * 0.65), 1.5rem), 3rem);
+}
+
+.no-break {
+	white-space: nowrap;
+}
+
+header[data-scrolled=true] div.branding {
+	min-width: 8rem;
+	/*left: 0;*/
+	/*transform: translateX(30px);*/
+	--size: 1vw;
+}
+
+header div.branding hr {
+	opacity: 0.25;
+}
+
+span.rest {
+	display: inline-block;
+	transform-origin: left;
+}
+
+/*header[data-scrolled=true] span.rest {
+	width: 0;
+	transform: scaleX(0);
+	overflow: hidden;
+}
+
+*/
+/*
+# Font Squirrel Font-face Generator Configuration File
+# Upload this file to the generator to recreate the settings
+# you used to create these fonts.
+
+{"mode":"expert","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"basic","subset_custom":"","subset_custom_range":"","subset_ot_features_list":"","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
+*/
+
+@font-face {
+    font-family: 'cinzelregular';
+    src: url('/fonts/cinzel-regular-webfont.woff2') format('woff2'),
+         url('/fonts/cinzel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cinzel_decorativeregular';
+    src: url('/fonts/cinzeldecorative-regular-webfont.woff2') format('woff2'),
+         url('/fonts/cinzeldecorative-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('/fonts/cinzeldecorative-bold-webfont.woff2') format('woff2'),
+         url('/fonts/cinzeldecorative-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cinzel_decorativeblack';
+    src: url('/fonts/cinzeldecorative-black-webfont.woff2') format('woff2'),
+         url('/fonts/cinzeldecorative-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cinzelbold';
+    src: url('/fonts/cinzel-bold-webfont.woff2') format('woff2'),
+         url('/fonts/cinzel-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cinzelblack';
+    src: url('/fonts/cinzel-black-webfont.woff2') format('woff2'),
+         url('/fonts/cinzel-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ /**
+# Font Squirrel Font-face Generator Configuration File
+# Upload this file to the generator to recreate the settings
+# you used to create these fonts.
+
+{"mode":"optimal","formats":["woff","woff2"],"tt_instructor":"default","fix_gasp":"xy","fix_vertical_metrics":"Y","metrics_ascent":"","metrics_descent":"","metrics_linegap":"","add_spaces":"Y","add_hyphens":"Y","fallback":"none","fallback_custom":"100","options_subset":"basic","subset_custom":"","subset_custom_range":"","subset_ot_features_list":"","css_stylesheet":"stylesheet.css","filename_suffix":"-webfont","emsquare":"2048","spacing_adjustment":"0"}
+**/
+
+@font-face {
+    font-family: 'coolveticacompressed_heavy';
+    src: url('/fonts/coolvetica_compressed_hv-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_compressed_hv-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticacondensed_regular';
+    src: url('/fonts/coolvetica_condensed_rg-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_condensed_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticacrammed_regular';
+    src: url('/fonts/coolvetica_crammed_rg-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_crammed_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('/fonts/coolvetica_rg-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticaregular_italic';
+    src: url('/fonts/coolvetica_rg_it-webfont.woff2') format('woff2'),
+         url('/fonts/coolvetica_rg_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('/fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_condensed';
+    src: url('/fonts/roboto-boldcondensed-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-boldcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_condensed_italic';
+    src: url('/fonts/roboto-boldcondenseditalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-boldcondenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('/fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotocondensed';
+    src: url('/fonts/roboto-condensed-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-condensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotocondensed_italic';
+    src: url('/fonts/roboto-condenseditalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-condenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('/fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('/fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('/fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Sega";
+	src: url("fonts/SEGA.woff2") format('woff2')
+		,url("fonts/SEGA.woff") format('woff')
+		,url("fonts/SEGA.TTF") format('ttf');
+}
+
+footer {
+	/*background-color: #111111;*/
+	color: #AAA;
+	margin: 1rem 0;
+}
+form {
+	flex: 1;
+}
+
+form,
+form > label {
+	display: flex;
+	flex-direction: column;
+}
+
+form > label {
+	margin-bottom: 0.75rem;
+}
+
+input, select {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,0.5);
+	padding: 0.5rem;
+	color: rgba(255, 255, 255, 0.75);
+	box-sizing: border-box;
+}
+
+input[type=button] {
+	background-color: rgba(255, 255, 255, 0.75);;
+	color: rgba(0, 0, 0, 0.75);
+	max-width: 50%;
+	align-self: flex-end;
+	margin: 0;
+}
+
+button {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	border-radius: 0;
+	padding: 1rem 2rem;
+	margin: 0.5rem 1rem;
+}
+
+button.cta {
+	background-color: white;
+	color: black;
+}
+
+html {
+	min-height: 100%;
+	font-family: robotoregular;
+
+}
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+html.menu-open {
+	margin-right: calc(1px * var(--gutter));
+}
+
+html.menu-open body {
+	overflow: clip;
+}
+
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	margin: 0;
+	max-width: 1000px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.row.reverse {
+	flex-direction: row-reverse;
+}
+
+@media(max-width: 750px) {
+	main .row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	main .row.reverse {
+		flex-direction: column;
+	}
+}
+
+header {
+	align-items: flex-end;
+	background-color: rgba(0, 0, 0, 1.0);
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	left: 100%;
+	border-bottom: 1px solid #222;
+	z-index: 1;
+}
+
+header nav {
+	position: absolute;
+	background-color: #060606;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+	transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #222;
+	z-index: 2000;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+footer {
+	text-align: right;
+}
+
+header nav a:not(:first-child) {
+	border-top: 1px solid white;
+}
+
+body, main {
+	flex: 1;
+}
+
+body > main {
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+section.call-out,
+section.code-image,
+section.contact-form,
+section.kellett-screen,
+section.john-rogers-screen {
+	padding: 2rem;
+}
+
+section.call-out {
+	background-color: rgba(255,255,255,0.06125);
+}
+
+section.contact-form {
+	background-color: #222;
+}
+
+section h3 {
+	padding: 1rem;
+	margin: auto;
+}
+
+section.contact-form h4 {
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+
+section.kellett-screen,
+section.john-rogers-screen {
+	min-height: 30rem;
+}
+
+section.john-rogers-screen {
+	background-image: url('/images/john-rogers-screenshot.png');
+}
+
+section.kellett-screen {
+	background-image: url('/images/kellett-screenshot.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+section.code-image {
+	background-image: url('/images/pexels-kevin-ku-577585.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	min-height: 444px;
+}
+
+h3 {
+	color: rgba(255,255,255, 0.75);
+	word-break: keep-all;
+	line-height: 1em;
+	text-align: right;
+	margin: 0;
+}
+
+section.logos {
+	margin-top: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+section.logos img {
+	width: 14%;
+	max-height: 5rem;
+	min-width: 6.5rem;
+	object-fit: contain;
+	margin: 2%;
+}
+
+section.logos-small img {
+	width: 10%;
+	min-width: 3.5rem;
+	vertical-align: middle;
+}
+
+section.logos p {
+	font-size: 1.25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on July 23, 2022 */
+
+
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('roboto-italic-webfont.woff2') format('woff2'),
+         url('roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('roboto-thin-webfont.woff2') format('woff2'),
+         url('roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+
+}
+
+/*# sourceMappingURL=app.css.map*/

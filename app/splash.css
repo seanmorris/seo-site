@@ -1,0 +1,143 @@
+div.splash {
+	font-family: Sega, Arial;
+	position: fixed;
+	top:    0px;
+	left:   0px;
+	width:  100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	align-content: center;
+	justify-content: center;
+	font-size: 140px;
+	color:#11559c;
+	z-index: 500000;
+}
+
+div.splash div.center {
+	box-sizing: content-box;
+	padding: 20px;
+	position: relative;
+	overflow: visible;
+	padding: 0px;
+}
+
+div.splash div.center div.sm {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	font-size: 10px;
+	font-family: monospace;
+	opacity: 0;
+}
+
+div.splash div.center:first-child {
+	-webkit-text-stroke: 20px white;
+}
+
+div.splash div.center:first-child div.sm {
+	-webkit-text-stroke: 4px white;
+}
+
+div.splash div.center:first-child div.min {
+	-webkit-text-stroke: 10px white !important;
+}
+
+div.splash div.center:first-child {
+	text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+div.splash div.center span.min {
+	opacity: 0;
+}
+
+div.splash div.center:last-child {
+	opacity: 0.5;
+}
+
+div.splash div.center {
+	text-align: center;
+	padding:10px;
+	position: absolute;
+	clip-path: polygon(
+		0 0
+		, 100% 0
+		, 100% 100%
+		, 0 100%
+	);
+}
+
+div.splash.hide div.center {
+	clip-path: polygon(
+		-25% 0%
+		, -10% 0%
+		, -10% 100%
+		, -25% 100%
+	);
+}
+
+div.splash.slide div.center {
+	clip-path: polygon(
+		110% 0%
+		, 125% 0%
+		, 125% 100%
+		, 110% 100%
+	);
+	opacity: 0.25;
+	transition: clip-path 0.5s;
+}
+
+div.splash.show {
+	background-color: #BBB;
+	color:#11559c;
+	transition: background-color 0.5s;
+}
+
+div.splash.show div.center:last-child,
+div.splash.done div.center:last-child {
+	opacity: 1;
+	transition: opacity 0.25s;
+}
+
+div.splash.show div.center span.min,
+div.splash.done div.center span.min {
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+
+div.splash.show div.center div.sm,
+div.splash.done div.center div.sm {
+	opacity: 1;
+	transition: opacity 0.25s;
+}
+
+div.splash.done {
+	background-color: black;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.75s ease-in,  background-color 0.75s ease-in;
+}
+
+span.min {
+	font-size: 35px;
+	margin-top:10px;
+	display: block;
+}
+
+.modal-dialog iframe {
+	width: 100%;
+	min-height: 600px;
+	margin-top: 2em;
+}
+
+iframe {
+	flex: 1;
+	border: 0px transparent;
+	max-width: 100%;
+	margin: 15px;
+}
+
+.modal .circle-progress {
+	border: black;
+}
